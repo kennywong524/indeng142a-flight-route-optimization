@@ -1,6 +1,6 @@
 # ✈️ Delay-Aware Itinerary Optimization under Uncertainty
 
-This project builds an end-to-end pipeline that predicts flight delays and cancellation risks, and then uses optimization (via Pyomo) to construct robust travel itineraries. Our goal is to help travelers or logistics systems minimize total travel time, cost, and delay risk.
+Building on the "predict-then-optimize" framework (Grigas et al., 2018), we develop a delay-aware itinerary optimization model that integrates machine learning with operations research. Using historical flight data from the Airline delay dataset, we create a pipeline that predicts expected travel delays and incorporate them into an optimization model to construct robust travel itineraries. We first apply supervised learning methods such as Logistic Regression, along with enhancements through XGBoost and Random Forest to predict average flight delays and cancellation rates for each airport-carrier pair, combining regression and classification models. Next, we apply unsupervised k-means clustering on normalized delay cause breakdowns, revealing interpretable delay profiles. These predictions are embedded into a minimum-cost network flow model, formulated in Pyomo, to select itineraries that minimize expected total travel time, delay and cancellation risks. This project demonstrates how predictive analytics and optimization can be combined to support real-world travel planning under uncertainty. 
 
 ---
 
