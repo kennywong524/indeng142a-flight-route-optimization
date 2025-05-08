@@ -52,7 +52,7 @@ To reproduce this project:
 - Uses Pyomo to formulate an optimization model
 - Inputs: delay + cancellation predictions datasets from notebook 2 & 3
 - Solves for optimal route given budget and constraints
-- Includes an **interactive component**: enter origin/destination to get optimal flight recommendation!
+- (For Bonus point) Includes an **interactive component**: enter origin/destination to get optimal flight recommendation!
 
 ---
 
