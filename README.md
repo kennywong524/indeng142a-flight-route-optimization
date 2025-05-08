@@ -73,5 +73,6 @@ To reproduce this project:
 
 ## 📬 Authors
 
-This project was completed as part of a final project for UC Berkeley's IND ENG 142A.  
+This project was completed as part of a final project for UC Berkeley's IND ENG 142A: Machine Learning & Data Analytics I
+Group members: Kenny Wongchamcharoen, Ashlee Liu, Charmaine Yuen, Annie chen, Sukhman Sidhu
 Feel free to reach out or fork this repo if you’re interested in applying predictive analytics + optimization to travel planning!
