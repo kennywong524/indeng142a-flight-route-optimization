@@ -1,4 +1,4 @@
-# ✈️ Delay-Aware Itinerary Optimization under Uncertainty
+# ✈️ Delay-Aware Flight Route Optimization under Uncertainty
 
 Group members: Kenny Wongchamcharoen, Ashlee Liu, Charmaine Yuen, Annie chen, Sukhman Sidhu
 
