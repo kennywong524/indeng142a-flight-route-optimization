@@ -19,8 +19,9 @@ You can download it from Kaggle:
 
 To reproduce this project:
 
-1. **Download all `.csv` files** from this repo and upload them into your environment (e.g., Colab or Jupyter).
-2. Follow the notebooks in this order:
+1. **Important!** Download the kaggle dataset & make sure the file name is `Airline_Delay_Cause.csv` before uploading it to notebook 1.
+2. **Download all `.csv` files** from this repo and upload them into your environment (e.g., Colab or Jupyter).
+3. Follow the notebooks in this order:
 
 ---
 
@@ -28,6 +29,7 @@ To reproduce this project:
 
 - Clean and filter raw BTS flight data
 - Focus on key carriers and airports
+- Input: `Airline_Delay_Cause.csv`
 - Output: `ml_ready_airport_airline_final.csv`
 
 ---
@@ -36,6 +38,7 @@ To reproduce this project:
 
 - Trains regression models (Random Forest, XGBoost, etc.)
 - Predicts average delay by carrier-airport
+- Input: `ml_ready_airport_airline_final.csv`
 - Output: `avg_predicted_delay_by_carrier_airport.csv`
 
 ---
@@ -43,6 +46,7 @@ To reproduce this project:
 ### 3️⃣ `cancellation_prediction.ipynb`
 
 - Trains classification models to estimate cancellation risk
+- Input: `ml_ready_airport_airline_final.csv`
 - Output: `avg_predicted_cancellation_risk.csv`
 
 ---
@@ -50,7 +54,7 @@ To reproduce this project:
 ### 4️⃣ `optimization+UI.ipynb`
 
 - Uses Pyomo to formulate an optimization model
-- Inputs: delay + cancellation predictions datasets from notebook 2 & 3
+- Inputs: `avg_predicted_delay_by_carrier_airport.csv` and `avg_predicted_cancellation_risk.csv`
 - Solves for optimal route given budget and constraints
 - (For Bonus point) Includes an **interactive component**: In the last cell, enter origin/destination to get optimal flight recommendation!
 
